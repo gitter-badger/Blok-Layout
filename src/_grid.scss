@@ -1,0 +1,99 @@
+// Bourbon:
+@import "../bourbon/bourbon";
+
+// Bitters:
+@import "../base/base";
+
+html /deep/ {
+    .center-block {
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+
+    .row {
+        width: 100%;
+        height: 100%;
+        /* max-width: 1000px; */
+        position: relative;
+
+        @include display( flex );
+        @include flex-direction( row );
+        @include flex-wrap( nowrap );
+        @include justify-content( flex-start );
+
+        &.stretch {
+            @include align-items(stretch);
+        }
+
+        &.centered {
+            @include justify-content(center);
+        }
+
+        &.wrap-row {
+            @include flex-wrap( wrap );
+        }
+    }
+
+    .column {
+        width: 100%;
+        max-width: 1000px;
+
+        // Flex col:
+        @include display(flex);
+        @include flex-direction(column);
+    }
+
+    .block, .mobile, .tablet {
+        @include flex(auto);
+        position: relative;
+
+        &.left {
+            @include align-self(flex-start);
+        }
+
+        &.left {
+            @include align-self(flex-end);
+        }
+
+        &.center {
+            @include align-self(center);
+        }
+    }
+
+    $desktop-block-slug: block !default;
+    $mobile-block-slug: mobile !default;
+    $tablet-block-slug: tablet !default;
+
+    @for $i from 1 through 12 {
+        .#{$desktop-block-slug}-#{$i} {
+            @include flex(#{$i});
+            &.left {
+                @include align-self(flex-start);
+            }
+
+            &.left {
+                @include align-self(flex-end);
+            }
+
+            &.center {
+                @include align-self(center);
+            }
+            position: relative;
+        }
+    }
+
+
+    .single-block.block-12 { flex: 0 0 100%; }
+    .single-block.block-11 { flex: 0 0 91.66666666%; }
+    .single-block.block-10 { flex: 0 0 83.33333333%; }
+    .single-block.block-9  { flex: 0 0 74.99999999%; }
+    .single-block.block-8  { flex: 0 0 66.66666666%; }
+    .single-block.block-7  { flex: 0 0 58.33333333%; }
+    .single-block.block-6  { flex: 0 0 49.99999999%; }
+    .single-block.block-5  { flex: 0 0 41.66666666%; }
+    .single-block.block-4  { flex: 0 0 33.33333333%; }
+    .single-block.block-3  { flex: 0 0 25.00000001%; }
+    .single-block.block-2  { flex: 0 0 16.66666666%; }
+    .single-block.block-1  { flex: 0 0 8.333333333%; }
+
+}

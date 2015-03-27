@@ -1,0 +1,73 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Blok Layout Demo</title>
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../dist/demo.css">
+</head>
+<body>
+
+    <header>
+        <div class="row">
+            <h1 class="block">Blok <small>custom layout</small></h1>
+        </div>
+    </header>
+
+    <h2>Horizontal Layout</h2>
+    <section class="demo-row-layout">
+        <div class="row">
+            <div class="block">
+                1 Block (Full width)
+            </div>
+        </div>
+        <div class="row">
+            <div class="block block-3">
+                3/12
+            </div>
+            <div class="block block-9">
+                9/12
+            </div>
+        </div>
+        <div class="row">
+            <div class="block block-1">
+                1/12
+            </div>
+            <div class="block block-5">
+                5/12
+            </div>
+            <div class="block block-5">
+                5/12
+            </div>
+        </div>
+    </section>
+
+    <h2>Vertical Layout</h2>
+    <section class="demo-row-layout row">
+        <div class="row">
+            <div class="block">
+                1 Block (Full width)
+            </div>
+        </div>
+        <div class="column">
+            <div class="block block-3">
+                3/12
+            </div>
+            <div class="block block-9">
+                9/12
+            </div>
+        </div>
+        <div class="column">
+            <div class="block block-1">
+                1/12
+            </div>
+            <div class="block block-5">
+                5/12
+            </div>
+            <div class="block block-5">
+                5/12
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

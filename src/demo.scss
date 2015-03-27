@@ -1,0 +1,60 @@
+/**
+ * Blok Demo
+ * @author Islam Magdy (http://jsfather.com | i.magdy.m@gmail.com)
+ * @license MIT
+ */
+
+// Imports:
+@import 'grid';
+
+// Fonts:
+$defaultFont: 'Noto Sans', sans-serif;
+
+// Some colors:
+$blue: #536dfe;
+$dblue: #1976D2;
+$red: #FF5722;
+$dred: #E64A19;
+$green: #4CAF50;
+$dgreen: #388E3C;
+$warning: #FFEB3B;
+$dwarning: #FBC02D;
+
+body {
+    color: #444;
+    font-family: $defaultFont;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: $dblue;
+    padding: 20px;
+    h1 {
+        color: #fff;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+        line-height: 31px;
+
+        small {
+            font-size: 15px;
+        }
+    }
+}
+
+.demo-row-layout {
+    .block {
+        background: $dwarning;
+        border: 1px solid $dred;
+        text-align: center;
+    }
+}
+
+h2 {
+    font-weight: normal;
+    text-align: center;
+    margin: 40px;
+    padding: 0;
+    line-height: 31px;
+}

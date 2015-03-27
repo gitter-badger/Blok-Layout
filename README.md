@@ -5,6 +5,9 @@
 
 Blok is a grid layout, that's very easy to use, and will save you tons of time. It's based on Flexible Box Layout Module (http://www.w3.org/TR/css3-flexbox/).
 
+## Current State
+Blok is Alpha now, it's still early to use it in production, but it's be in active development, so keep your codebase updated regularly.
+
 ## Introduction
 Blok is a layouting helper SASS/CSS library that you can easily include in your project and get started right away. It's similar to other grids like Bootstrap's or Foundation's,..etc but there are few major differences explained below.
 

@@ -1,6 +1,8 @@
 [grid-screenshot]: dist/blok.png
 
 # Blok Layout
+
+[![Join the chat at https://gitter.im/IslamMagdy/Blok-Layout](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/IslamMagdy/Blok-Layout?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ![Blok][grid-screenshot]
 
 Blok is a grid layout, that's very easy to use, and will save you tons of time. It's based on Flexible Box Layout Module (http://www.w3.org/TR/css3-flexbox/).
